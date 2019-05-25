@@ -1,0 +1,262 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@font-face {
+	font-family: 'FonteLogo';/* Nome da fonte que estamos criando */
+	src: url("../_fonts/bubblegum-sans-regular.otf"); /*Link para o arquivo da fonte*/
+}
+body{ /*Corpo principal do texto*/
+	font-family: Arial, sans-serif; /*Estilo da fonte utilizada: Arial ou alguma sem serifa*/
+	background-color: #dddddd; /*Cor utilizada para o background: um tipo de cinza*/
+	color: rgba(0, 0, 0, 0.8); /*Cor da letra dos textos*/
+}
+
+div#interface { /*Interface engloba tudo que está em body, criando uma pagina por cima do body*/
+	width: 1200px; /*Largura da tela*/
+	background-color: #ffffff; /*Cor do background da página, branca no caso*/
+	margin: -20px auto 0px auto; /*Margens externas da pagina, sentido horário: cima, direita, baixo, esquerda*/
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /*Sombra nos 10 primeiros pixels das bordas da página, cor preta com 50% transparência*/
+	padding: 10px 10px 10px 10px; /*Margens internas da página*/
+}
+
+p{ /*Parágrafos*/
+	text-align: justify; /*Alinhamento do texto: Justificado*/
+	text-indent: 50px /*Quantidade de pixels de parágrafo*/
+}
+
+a { /*Textos com links*/
+	color: blue; /*cor da palavra com o link*/
+	text-decoration: none; /*Decoração do texto: se está sublinhado, por exemplo*/
+}
+
+a:hover { /*Configuração dos textos com link quando o mouse passa por cima da palavra*/
+	text-decoration: underline; /*Decoração ao sobrepor a palavra com o mouse*/
+}
+header#cabecalho img#icone { /*Posição das imagens do cabeçalho, abaixo do menu*/
+	position: absolute;
+	left: 1090px;
+	top: 70px;
+}
+
+header#cabecalho { /*Config. do cabeçalho*/
+	border-bottom: 1px #606060 solid; /*Criação da linha que separa o cabeçalho da do body: espessura, cor, estilo*/
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#cabecalho h1{ /*Configuração das propriedades de h1 no cabeçalho*/
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2{ /*Configuração das propriedades de h2 no cabeçalho*/
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15 pt;
+	color: #888888;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+
+/* Formatação de imagens com legendas */
+figure.foto-legenda{
+	position: relative;
+	border: 8px white solid;
+	box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img{
+	width: 100%;
+	height: 100%;
+}
+
+figure.foto-legenda figcaption{
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+/* Formatação do menu */
+nav#menu{
+	display: block;
+}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 500px;
+}
+
+nav#menu li{
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+nav#menu li:hover {
+	background-color: #606060;
+}
+
+nav#menu h1{
+	display: none;
+}
+
+nav#menu a{
+	color: black;
+	text-decoration: none;
+}
+
+nav#menu a:hover{
+	color: white;
+}
+
+section#corpo {
+	display: block;
+	width: 650px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+
+article#noticia-principal h2{
+	font-size: 13pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+header#cabecalho-artigo h3.direita{
+	text-align: right;
+}
+
+header#cabecalho-artigo h2 {
+	font-size: 13pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+	font-size: 12pt;
+	color: #606060;
+}
+
+table#tabelaspec {
+	border: 1px solid #606060;
+	!border-spacing: 0px;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabelaspec td {
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: center;
+	vertical-align: top;
+}
+
+table#tabelaspec td.ce {
+	vertical-align: top;
+	text-align: right;
+	color: #ffffff;
+	background-color: #606060;
+	font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+	text-align: left;
+	background-color: #cecece;
+}
+
+table#tabelaspec caption {
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+
+table#tabelaspec caption span{
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 8px;
+}
+
+video#filme01 {
+	display: block;
+	position: relative;
+	top: -10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+video#filme02 {
+	display: block;
+	position: relative;
+	top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+aside#lateral {
+	display: block;
+	width: 500px;
+	float: right;
+	background-color: #dddddd;
+	padding: 13px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+aside#lateral h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+}
+
+aside#lateral h2{
+	background-color: #606060;
+	font-size: 13pt;
+	color: #ffffff;
+	padding: 5px;
+}
+
+footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
