@@ -1,0 +1,7 @@
+Javascript - O guia definitivo. Autor: David Flanagan. Editora: O'Reilly
+
+Javascript - Guia do Programador - Mauricio Samy Silva. Editora: Novatec
+
+Guia de referência da Mozilla: https://developer.mozilla.org/pt-BR/docs/Web
+
+Guia de referência da Ecma: https://www.ecma-international.org/publications/standards/Ecma-262-arch.htm

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Início:
+                <input type='number' name='txt_ini_num' id='txt_ini_num' min = '-100000' max='100000'>
+            </p>
+            <p>Fim:
+                <input type='number' name='txt_end_num' id='txt_end_num'  min = '-10000000' max='10000000'>
+            </p>
+            <p>Passo:
+                <input type='number' name='txt_pace' id='txt_pace'  min = '-10000' max='10000'>
+            </p>
+            <input type='button' value='Contar' onclick="contar()">
+        </div>
+
+        <div id='msg'>
+            <p>Preparando a contagem...</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;Curso em Vídeo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

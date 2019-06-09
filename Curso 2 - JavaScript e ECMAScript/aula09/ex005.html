@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passos DOM</title>
+    <style>
+        body {
+            background: rgb(36, 31, 85);
+            color: white;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div>Clique em mim TAG</div>
+    <div id='msg'>Clique em mim ID</div>
+    <div name='PrimeiroName'>Clique em mim NAME</div>
+    <div class='PrimeiraClass'>Clique em mim CLASS</div>
+    <script>
+        window.document.write('</br>' + 'Olá, mundo!' + '</br>')
+        window.document.write(window.document.URL+'</br>')
+        window.document.write(window.navigator.appName+'</br>')
+        
+        //Acesso por Marca
+        /*
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim: ' + p1.innerText+'</br>')
+        p1.style.color = 'blue'
+
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+
+        document.write(p1.innerHTML) //innerHTML pega a formatação, innerText só texto
+        */
+        
+        //Acesso por ID
+
+        var corpo = window.document.body
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando'
+        //window.document.getElementById('msg').innerText = 'Ola'
+
+
+        //Acesso por Nome
+        /*
+        var d = window.document.getElementsByName('PrimeiroName')[0]
+        d.innerText = 'Olá!'
+        */
+
+        //Acesso por Classe
+        /*
+        var a = window.document.getElementsByClassName('PrimeiraClass')[0]
+        a.innerText = 'Olá Tudo Bem?'
+        */
+
+        //Acesso por Seletor
+        /*
+        var d = window.document.querySelector('div#msg')
+        //# -> id
+        //. -> class
+        d.style.color = 'blue'
+        d.style.background = 'yellow'
+        */
+
+
+    </script>
+</body>
+</html>

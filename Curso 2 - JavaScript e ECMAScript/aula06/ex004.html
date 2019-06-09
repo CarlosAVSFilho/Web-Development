@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lan='pt-br'>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+    <script src="main.js"></script>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //Formatando strings
+        var nome = window.prompt('Qual é seu nome?')
+        document.write(`Olá <strong>${nome}</strong>. Seu nome tem ${nome.length} letras.<br/>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.<br/>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}.<br/>`)
+
+        //Formatando números
+        var n1 = Number(window.prompt('Digite um valor de dinheiro'))
+        document.write(`${nome} possui ${n1.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}.`)
+    </script>
+</body>
+</html>
